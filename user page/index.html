@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="container-mod">
+      <div id="container-int">
+        <h1>Tell us about you</h1>
+        <input
+          class="input input-name"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="input input-surname"
+          type="text"
+          placeholder=" Surname"
+          required
+        />
+        <input
+          class="input input-more"
+          placeholder="more about you"
+          type="text"
+        />
+        <button id="sent">Sent</button>
+      </div>
+    </section>
+
+    <section class="hidden success-container">
+      <div id="succ-int">
+        <h2 class="message-success"></h2>
+        <hr />
+        <div class="container-progress">
+          <div class="int-progress"></div>
+        </div>
+        <hr />
+        <button id="btn-continue">
+          <a href="other page/game.html">continue</a>
+        </button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

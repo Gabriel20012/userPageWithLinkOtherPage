@@ -1,0 +1,113 @@
+/*modules*/
+#container-mod {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-int {
+  width: 70%;
+  height: min-content;
+  background-color: rgba(9, 255, 5, 0.226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+#sent {
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid green;
+  cursor: pointer;
+}
+
+.input {
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.input-more {
+  padding: 20px;
+}
+
+/*after user intert his data*/
+.success-container {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+}
+
+#succ-int {
+  text-align: center;
+  width: 30%;
+  height: min-content;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  z-index: 10;
+  animation: successAnimation 1s linear;
+  color: rgba(0, 3, 0, 0.72);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/*btn continue*/
+#btn-continue {
+  border-radius: 10px;
+  cursor: pointer;
+  animation: successAnimation 1s linear;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes successAnimation {
+  0% {
+    width: 0%;
+    height: 0px;
+
+    font-size: 0px;
+  }
+}
+
+/*progrees nav*/
+.container-progress {
+  width: 50%;
+  height: 20px;
+  border: 5px solid rgb(255, 255, 255);
+  padding: 2px;
+  border-radius: 10px;
+}
+.int-progress {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(0, 128, 0);
+  animation: progg 5s linear;
+  border-radius: 10px;
+}
+
+@keyframes progg {
+  0% {
+    width: 0%;
+  }
+}
